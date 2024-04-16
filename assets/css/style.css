@@ -2,7 +2,7 @@
 
 :root {
     --menu-back: #DADADA;
-    --section-back: #E5F5FF;
+    --section-back: #F2FAFF;
     --black: #333333;
     --white: #ffffff;
     --blue: #0099FF;
@@ -109,6 +109,44 @@ section {
 
 .extra-padding{
     padding-bottom: 120px;
+}
+
+.link{
+    color: var(--black);
+    position: relative;
+}
+.link::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--blue);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+.accordion-item:first-of-type,
+.accordion-item:last-of-type{
+    border-radius: 0;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button{
+    border-radius: 0;
+}
+
+.accordion-button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--blue);
+    color: #fff;
 }
 
 
@@ -224,3 +262,127 @@ section {
 }
 
 /* team section end */
+
+
+/* project section start */
+.project-card{
+    box-shadow: 0 0 5px #e2e2e2;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.project-card h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+/* project section end */
+
+/* faq section start */
+.faq{
+    background: var(--section-back);
+}
+/* faq section end */
+
+
+/* testimonial section start */
+.testimonial .star{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.testimonial .star i{
+    color: var(--blue);
+}
+
+.testimonial .quote{
+    font-size: 14px;
+}
+.testimonial .author{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial .info p{
+    font-size: 16px;
+}
+
+.testimonial .info .name{
+    font-weight: 500;
+}
+/* testimonial section end */
+
+/* cta section start */
+.cta__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333333;
+    padding: 110px;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.cta__container .text{
+    width: 60%;
+}
+/* cta section end */
+
+/* footer section start */
+.footer{
+    background: var(--section-back);
+    padding: 95px 0;
+}
+
+.footer .socials{
+    display: flex;
+    gap: 5px;
+}
+
+.footer .socials a{
+    height: 32px;
+    width: 32px;
+    background: var(--white);
+    border-radius: 4px;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .widget-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.footer .footer-menu li a{
+    color: var(--black);
+}
+
+.footer .subcribe-form input{
+    padding: 10px 15px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.footer .subcribe-form .subcribe-btn{
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: var(--white);
+    width: 100%;
+    transition: all .3s linear;
+} 
+
+.footer .subcribe-form .subcribe-btn:hover{
+    background: var(--white);
+    color: var(--blue);
+}
+/* footer section end */
