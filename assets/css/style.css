@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-:root{
+:root {
     --menu-back: #DADADA;
     --section-back: #E5F5FF;
     --black: #333333;
@@ -8,44 +8,40 @@
     --blue: #0099FF;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     color: var(--black);
 }
 
-a{
+a {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-img{
-    /* width: 100%; */
-}
-
-section{
+section {
     padding: 120px 0;
 }
 
-.heading-text{
+.heading-text {
     font-size: 56px;
     font-weight: bold;
 }
 
-.primary-btn{
+.primary-btn {
     background: var(--blue);
     border: 1px solid var(--blue);
     color: var(--white);
@@ -53,12 +49,13 @@ section{
     border-radius: 4px;
     transition: all .3s linear;
 }
-.primary-btn:hover{
+
+.primary-btn:hover {
     background: var(--white);
     color: var(--blue);
 }
 
-.secondary-btn{
+.secondary-btn {
     border: 1px solid var(--blue);
     padding: 18px 38px;
     border-radius: 4px;
@@ -66,93 +63,99 @@ section{
     transition: all .3s linear;
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover {
     background: var(--blue);
     color: var(--white);
 }
 
-.heading{
+.heading {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 70px;
 }
 
-.title{
+.title {
     font-size: 20px;
     font-weight: 500;
 }
 
-.sub-title{
+.sub-title {
     font-size: 48px;
     font-weight: bold;
 }
 
-.heading .text-area{
+.heading .text-area {
     width: 50%;
     text-align: center;
 }
 
-.card{
+.card {
     border: none;
 }
 
-.card .card-body{
+.card .card-body {
     padding: 50px 30px;
 }
 
-.card h3{
+.card h3 {
     font-size: 32px;
     font-weight: bold;
 }
 
-.card p{
+.card p {
     font-size: 14px;
+}
+
+.extra-padding{
+    padding-bottom: 120px;
 }
 
 
 /* menu style start */
-.menu{
+.menu {
     border-bottom: 1px solid var(--menu-back);
     padding: 20px 0;
 }
 
-.menu__container{
+.menu__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu .main-menu{
+.menu .main-menu {
     display: flex;
     gap: 40px;
 }
 
-.main-menu li a{
+.main-menu li a {
     color: var(--black);
 }
 
-.main-menu li a:hover{
+.main-menu li a:hover {
     font-weight: 500;
 }
 
-.main-menu li .active{
+.main-menu li .active {
     font-weight: 500;
 }
 
-.menu .contact-btn{
+.menu .contact-btn {
     background: var(--blue);
     color: var(--white);
     padding: 20px 65px;
     border-radius: 4px;
 }
+
 /* menu style end */
 
 /* hero section start */
-.hero{
+.hero {
     padding: 50px 0;
 }
-.hero__container{
+
+.hero__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,23 +163,64 @@ section{
 }
 
 .hero .left-box,
-.hero .right-box{
+.hero .right-box {
     flex-basis: 50%;
 }
 
-.hero .left-box .buttons{
+.hero .left-box .buttons {
     display: flex;
     gap: 16px;
 }
 
-.hero .right-box img{
+.hero .right-box img {
     width: 100%;
 }
+
 /* hero section end */
 
 
 /* service section start */
-.service{
+.service {
     background: var(--section-back);
 }
+
 /* service section end */
+
+/* team section start */
+.team {
+    background: var(--section-back);
+}
+
+
+.team-img {
+    position: relative;
+}
+
+.team-img .info-area {
+    position: absolute;
+    background: var(--white);
+    width: 90%;
+    padding: 20px;
+    left: 5%;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-area .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.info-area .social-icons a {
+    color: var(--black);
+}
+
+.info-area .social-icons a i {
+    font-size: 12px;
+}
+
+/* team section end */
