@@ -2,6 +2,10 @@
 
 :root{
     --menu-back: #DADADA;
+    --section-back: #E5F5FF;
+    --black: #333333;
+    --white: #ffffff;
+    --blue: #0099FF;
 }
 
 *{
@@ -12,11 +16,167 @@
 
 body{
     font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: var(--black);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    /* width: 100%; */
+}
+
+section{
+    padding: 120px 0;
+}
+
+.heading-text{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.primary-btn{
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    color: var(--white);
+    padding: 18px 38px;
+    border-radius: 4px;
+    transition: all .3s linear;
+}
+.primary-btn:hover{
+    background: var(--white);
+    color: var(--blue);
+}
+
+.secondary-btn{
+    border: 1px solid var(--blue);
+    padding: 18px 38px;
+    border-radius: 4px;
+    color: var(--blue);
+    transition: all .3s linear;
+}
+
+.secondary-btn:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sub-title{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.heading .text-area{
+    width: 50%;
+    text-align: center;
+}
+
+.card{
+    border: none;
+}
+
+.card .card-body{
+    padding: 50px 30px;
+}
+
+.card h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card p{
+    font-size: 14px;
 }
 
 
 /* menu style start */
 .menu{
     border-bottom: 1px solid var(--menu-back);
+    padding: 20px 0;
+}
+
+.menu__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .main-menu{
+    display: flex;
+    gap: 40px;
+}
+
+.main-menu li a{
+    color: var(--black);
+}
+
+.main-menu li a:hover{
+    font-weight: 500;
+}
+
+.main-menu li .active{
+    font-weight: 500;
+}
+
+.menu .contact-btn{
+    background: var(--blue);
+    color: var(--white);
+    padding: 20px 65px;
+    border-radius: 4px;
 }
 /* menu style end */
+
+/* hero section start */
+.hero{
+    padding: 50px 0;
+}
+.hero__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero .left-box,
+.hero .right-box{
+    flex-basis: 50%;
+}
+
+.hero .left-box .buttons{
+    display: flex;
+    gap: 16px;
+}
+
+.hero .right-box img{
+    width: 100%;
+}
+/* hero section end */
+
+
+/* service section start */
+.service{
+    background: var(--section-back);
+}
+/* service section end */
