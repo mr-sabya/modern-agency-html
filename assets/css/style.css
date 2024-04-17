@@ -149,6 +149,27 @@ section {
     color: #fff;
 }
 
+.banner{
+    background: var(--blue);
+    color: var(--white);
+    padding: 80px;
+}
+
+.banner .banner__container{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner__container .text-area{
+    width: 60%;
+    text-align: center;
+}
+
+.banner .banner__container .text-area h2{
+    font-size: 60px;
+    
+}
+
 
 /* menu style start */
 .menu {
@@ -274,6 +295,18 @@ section {
 .project-card h3{
     font-weight: bold;
     font-size: 30px;
+}
+
+.project-title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.list-row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a98bfa;
+    margin-bottom: 10px;
 }
 /* project section end */
 
